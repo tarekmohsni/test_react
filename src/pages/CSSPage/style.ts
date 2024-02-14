@@ -32,12 +32,12 @@ export const useStyle = makeStyles((theme: Theme) => ({
     circle: {
         width: theme.spacing(10),
         height: theme.spacing(10),
-        backgroundColor: '#1B7F79',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: 'white',
+        backgroundColor: "#1B7F79",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "white",
     },
 }));
 
@@ -46,5 +46,5 @@ export const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: "center",
-    color: theme.palette.text.secondary
+    color: theme.palette.text.secondary,
 }));

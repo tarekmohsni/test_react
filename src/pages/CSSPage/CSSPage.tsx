@@ -1,4 +1,4 @@
-import { useStyle,Item } from "@pages/CSSPage/style";
+import { useStyle, Item } from "@pages/CSSPage/style";
 import { Navigation } from "@features/Navigation/Navigation";
 import { Language, PhoneInTalk, Sms } from "@mui/icons-material";
 import { Fragment } from "react";
@@ -15,7 +15,7 @@ export const CSSPage = () => {
             <Grid>
                 <h1 className={classes.title}>Welcome</h1>
                 <p className={classes.usageText}>Usage since 07/11/2024</p>
-                <Grid container justifyContent="center" alignItems="center" rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 1 }}>
+                <Grid container justifyContent="center" alignItems="center" rowSpacing={2}>
                     <Grid md={4}>
                         <Avatar className={classes.circle}>
                             <Sms />
@@ -38,7 +38,7 @@ export const CSSPage = () => {
                         </Avatar>
                     </Grid>
                 </Grid>
-                <Grid container justifyContent="center" alignItems="center" owSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                <Grid container justifyContent="center" alignItems="center" owSpacing={2} columnSpacing={{ xs: 2, sm: 3, md: 4 }}>
                     <Grid>
                         <Grid container spacing={2}>
                             <Grid xs={2} md={8}>
