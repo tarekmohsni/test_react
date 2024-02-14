@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "lib": ["dom", "ESNext"],
+    "types" : ["jest", "node"],
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "rtl-config": ["./testConfiguration/rtl-config"],
+      "@static/*": ["./src/static/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@common*": ["./src/common"],
+      "@common/*": ["./src/common/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@features/*": ["./src/features/*"],
+      "@context/*": ["./src/context/*"],
+      "@mappers/*": ["./src/mappers/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@translations/*": ["./src/translations/*"],
+      "@constants": ["./src/constants.ts"],
+      "@appRoutes": ["./src/appRoutes.ts"],
+      "@api-routes/*": ["./src/apiRoutes/*"]
+    }
+  },
+  "exclude": ["./node_modules"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts", "./testConfiguration/**/*", "./vite.config.ts"]
+}
